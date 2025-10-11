@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Zonelets Home</title>
+    <!-- The description is not directly visible on the page. But it can show up in certain places like search engines. Probably unnecessary for most pages in your blog. -->
+    <meta name="description" content="Zonelets is a scrappy blogging workflow designed to encourage creative fun on the internet!">
+    <!-- This specifies the favicon (little icon on the browser tab) -->
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon"/>
+    <!-- Setting the viewport scale does most of the work in making the site readable whether you're on a phone or desktop computer ("responsive design") -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <!-- Here's the link to our CSS stylesheet! -->
+    <link href="./style/style.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <div id="container">
+    <!-- Don't put content in "header" div! It will be replaced! If JavaScript is disabled, the following note will appear. -->
+    <nav class="navbar">
+      <ul>
+        <a href="archive.html">Archive</a>
+      </ul>
+    </nav>
+
+    <div id="content">
+
+      <h1>Welcome to Zonelets!</h1>
+
+      <p>Zonelets is a simple, free blogging engine for everyone! Plenty of services can help you to “create a professional-looking website without writing a single line of code.” Now, thanks to Zonelets, you can create an <em>UNPROFESSIONAL</em>-looking website by writing <em>NUMEROUS</em> lines of code! ...Hey, wait, come back! Let me explain!</p>
+      <h2>The Void</h2>
+      <p>The modern internet has coalesced around a few big sites, run by a few big companies. Social media giants absorb the vast majority of ordinary people's creative and expressive engagement with the internet. Many, myself included, spend much more time on social media than we would like. Creating a giant, decontextualized flood of micro-thoughts may benefit the corporate entities behind Twitter or Instagram, but does it benefit real human beings? <em>Is this what we really want?</em></p>
+      <h2>Blogging</h2>
+      <p>Lately, I've been obsessed with blogging, because I find that blogs are structurally better at providing what I want (and generally fail to get) from Social Media&trade;. I want to learn new things, but social media rewards shallow discussion. I want to know my friends better, but social media platforms exert a normalizing force (Twitter-self, Facebook-self, Instagram-self). Ultimately, it feels like I'm getting to know the platforms rather than the people on them.</p>
+      <p>Social Media is a giant, twisted knot of corporate abstraction, always seeming to point back towards its own relevance, its own inevitability. But because it is centralized and tied to the whims of capitalists, it will never truly prioritize the needs and desires of the vast majority of its users. Blogs have the structural opportunity to feel like human spaces. <em>A little zone, browsed by visitors, decorated or tinkered with.</em> A space where the author sets the tone.</p>
+      <h2>Sounds nice, but you said I would have to code...</h2>
+      <p>You're right! Technically Zonelets is about blogging <em>in HTML</em>. That means that when you write a paragraph, it will have to be enclosed in a &lt;p&gt; tag, which looks like this:</p>
+      <p><em>&lt;p&gt;</em>I'm writing a beautiful paragraph. This is a lovely example paragraph.<em>&lt;/p&gt;</em></p>
+      <p>Kinda weird, yes, but it actually doesn't have to get much more complicated than that. Using hashtags on social media, knitting, and Pig Latin are similar types of code!</p>
+      <p>A metaphor: plenty of people know very little about cooking, but most people could cook and eat an egg. Imagine living in a world where if you craved eggs, your only options were to nab a fast food breakfast sandwich (social media) or go out to an expensive brunch (premium website builder)! Both of those options have their place, but wouldn't it be unfortunate if it were kept secret that most people could literally just fry an egg themselves?</p>
+      <p>Sure, parts of the internet can be very structurally complex. But Zonelets is the "fried egg" of the internet. Making text appear online is both utterly basic and infinitely powerful. <em>If you write something down, and someone else reads it from afar... that's it! That's the whole thing! You've done it!</em> And no amount of complexity or polish or professionalism or engagement metrics or dopamine-hijacking frameworks could ever replace that. </p>
+      <p>Even giving this project a fun name like "Zonelets" is kind of misleading. Zonelets is almost nothing: an idea, a few example files, a bit of scripting to save you some inconvenience. But really, it's just you, playing with the fundamental building blocks of the internet.</p>
+      <p>...</p>
+      <p>Are you ready? Let's go! Click the links in "Recent Posts" to learn more. This site is formatted like a blog, which is kind of weird because it's not exactly a blog. That's because it's an example of a Zonelet and an explanation of Zonelets at the same time ;)</p>
+      <!-- Don't put content in "recentpostlist" or "footer"! They will be replaced! -->
+      <div id="recentpostlistdiv"></div>
+    </div> <!-- end of div id="content" -->
+    <div id="footer"></div>
+    </div> <!-- end of div id="container" -->
+
+  <!-- Here's the link to our JavaScript! -->
+  <script src="./scripts/script.js"></script>
+  </body>
+</html>
