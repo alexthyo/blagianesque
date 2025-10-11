@@ -114,3 +114,20 @@ footer {
   box-sizing: border-box;
 }
 
+#jneko {
+  position: absolute;
+  top: 100%;
+  left: 51%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+#jneko img {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  filter: drop-shadow(0px 2px 12px #0007);
+  width: 3em;
+  height: 3em;
+
+}
