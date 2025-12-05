@@ -1,9 +1,102 @@
+/* --- GENRAL --- */
+
+/* Global Styles */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* End */
 
+/* Page Header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 21px;
+}
+/* End */
+
+/* Body and Layout */
+body {
+  color: white;
+  font-family: Verdana;
+  background: url('neocities/assets/background.jpg') no-repeat center center / cover;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0 50px;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.143);
+  z-index: 0;
+  pointer-events: none;
+}
+
+body > * {
+  position: relative;
+  z-index: 1;
+}
+/* End */
+
+/* Content Styles */
+p{
+  margin-bottom: 32px;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+  padding: 20px;
+  position: relative;
+  z-index: 1;
+  text-align: left;
+}
+/* End */
+
+/* Overlay Effect */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+  pointer-events: none;
+}
+/* End */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* End */
+
+/* Navigation */
 .topnav {
   display: flex;
   flex-wrap: wrap;
@@ -28,99 +121,29 @@
 }
 
 .topnav a.active {
-  background-color: #25bd4b;
-  color: white;
+  background-color: #25ff14;
+  color: black;
 }
+/* End */
 
-.page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
-  position: relative;
-  z-index: 1;
-}
+/* Links */
+a:hover { text-shadow: 0 0 5px white; }
 
-.page-header h1 {
-  margin: 0;
-  font-size: 21px;
+a {
+  color: #25ff14;
+  text-decoration: none;
 }
+/* End */
 
-body {
-  color: white;
-  font-family: Verdana;
-  background: url('neocities/assets/background.jpg') no-repeat center center / cover;
-  height: 100vh;
-  position: relative;
-}
+/* --- END --- */
 
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.143);
-  z-index: 0;
-  pointer-events: none;
-}
 
-body > * {
-  position: relative;
-  z-index: 1;
-}
-
-p{
-  margin-bottom: 32px;
-}
-
-.content {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-  width: 100%;
-  text-align: left;
-}
-
-.centered-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 120px);
-  padding: 20px;
-  position: relative;
-  z-index: 1;
-  text-align: left;
-}
-
-.overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.1);
-  z-index: 0;
-  pointer-events: none;
-}
-
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: calc(100vh - 120px);
-  padding: 10px;
-  position: relative;
-  z-index: 1;
-  text-align: left;
-}
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
+/* --- HOME PAGE -- */
+/* Cat (Decoration) */
 #jneko {
   position: absolute;
   top: 100%;
+  bottom: -85%;
   left: 51.2%;
   transform: translate(-50%, -50%);
   z-index: 1000;
@@ -134,47 +157,69 @@ footer {
   width: 3em;
   height: 3em;
 }
+/* End */
+/* --- END --- */
 
-.button-23 {
-  background-color: #FFFFFF;
-  border: 1px solid #222222;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #222222;
-  cursor: pointer;
-  display: inline-block;
-  font-family: Playfair Display;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 20px;
-  margin: 0;
-  margin-top: 16px;
-  outline: none;
-  padding: 4px 12px;
+
+/* HEADING for current subpage*/
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 25px;
+  margin-bottom: 25px;
   position: relative;
+}
+
+h3 {
   text-align: center;
-  text-decoration: none;
-  touch-action: manipulation;
-  transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
-  user-select: none;
-  -webkit-user-select: none;
-  width: auto;
+}
+/* END */
+
+
+
+
+@keyframes popUp {
+  from { transform: scale(0.9); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
 }
 
-.button-23:focus-visible {
-  box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
-  transition: box-shadow .2s;
+.overlay-content .artists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 130px; /* consistent size per item */
 }
 
-.button-23:active {
-  background-color: #F7F7F7;
-  border-color: #000000;
-  transform: scale(.96);
+.overlay-content .artists img {
+  width: 115px;
+  height: 115px;
+  object-fit: cover;  /* keeps proportions, no stretch */
+  border-radius: 50%;
+  transition: transform 0.2s ease;
 }
 
-.button-23:disabled {
-  border-color: #DDDDDD;
-  color: #DDDDDD;
-  cursor: not-allowed;
-  opacity: 0;
+.overlay-content .artists img:hover {
+  transform: scale(1.1);
+}
+
+.overlay-content .caption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: white;
+  text-align: center;
+  line-height: 1.2;
+}
+
+
+/* Footer Styles */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 120px);
+  padding: 10px;
+  bottom: 0;
+  position: relative;
+  z-index: 1;
+  text-align: left;
 }

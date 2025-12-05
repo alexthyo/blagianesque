@@ -1,0 +1,425 @@
+.music-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.split-layout {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.left-side {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.playlist-section iframe {
+  margin-left: 20px;
+}
+
+.playlists-title {
+    margin-top: 65px;
+}
+
+
+h2{
+    margin-left: 20px;
+}
+
+/* --- GENRES --- */
+
+.genre-icon,
+.overlay-content .genre-icon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  margin: 0 auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.genre-icon::before,
+.overlay-content .genre-icon::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: inherit;
+  filter: blur(1px) brightness(0.8);
+  transform: scale(1.07);
+  z-index: 0;
+}
+
+
+.overlay-content .genres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 135px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.genre-icon span,
+.overlay-content .genre-icon span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.genres {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 135px; 
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.genre-icon img,
+.artists img {
+  /* make images follow their container size so icons stack consistently */
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  z-index: 1; /* above the blurred ::before layer */
+}
+/* Dock-style hover: scale images */
+.genre-icon img:hover,
+.artists img:hover {
+  transform: scale(1.075);
+  z-index: 10;
+}
+
+.artists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 125px;
+  height: 150px;
+  box-sizing: border-box;
+}
+
+.artists .caption,
+.genres .caption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+}
+
+/* hidden by default */
+.genre-artists.hidden {
+  display: none;
+}
+
+/* artist inside genre */
+.genre-artists .artist {
+  display: inline-block;
+  margin: 5px;
+  text-align: center;
+}
+/* End */
+
+/* Dock hover effect */
+.genre-icon:hover {
+  transform: scale(1.075);
+  z-index: 10;
+}
+
+.genre:hover {
+  transform: scale(1.1);
+  opacity: 0.85;
+}
+
+/* Overlay for genre view */
+#genre-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+#genre-overlay.hidden {
+  display: none;
+}
+
+#genre-overlay .overlay-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  max-width: 80%;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  animation: popUp 0.1s ease;
+}
+
+.genre-icon, 
+.overlay-content .genre-icon {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.genres-nav{
+  flex: 1;
+  background: rgba(0,0,0,0.85);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.genres-section {
+  flex: 1;
+  max-width: 80%;
+}
+
+.genres-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* --- END --- */
+
+
+/* --- VINYLS  & CDS --- */
+.cds-section,
+.vinyl-section {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.cds-row,
+.vinyls-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.photo-vinyls {
+  width: 150px;
+  height: 150px;
+}
+
+.photo-vinyls,
+.photo-cds {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.photo-vinyls img {
+  display: block;
+  width: 135px;
+  height: 135px;
+  object-fit: cover;
+}
+
+.photo-cds img {
+  display: block;
+  object-fit: cover;
+}
+
+.photo-vinyls .caption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.65rem;
+}
+
+.photo-cds {
+  width: 120px;    
+  height: 135px;
+}
+
+.photo-cds img {
+  width: 85px;
+  height: 85px;
+}
+
+.photo-cds .caption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.60rem;
+}
+/* --- END --- */
+
+
+.playlist-section {
+  flex: 1; /* fill right-side */
+  width: 100%; /* ensures section takes full width of right-side */
+}
+
+.photo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+/* All time favs */
+.favorites-row, .genres-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: flex-start;
+  flex-basis: 100%;      /* ensures section takes full row */
+  width: 100%;           /* safe fallback */
+
+  
+  max-width: 1500px;        /* optional, prevent ultra-wide stretching */
+  margin-left: auto;
+  margin-right: auto;/* space between sections */
+}
+
+.all-time-favs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 135px; 
+  height: 150px;
+  box-sizing: border-box;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.all-time-favs img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+
+.all-time-favs .caption {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-left: 15px;
+}
+/* End */
+
+.songs-section{
+    margin-top: 100px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+/* TEST*/
+
+.overlay-content .all-time-favs {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  position: relative;
+  margin: 0 auto;
+}
+
+.overlay-content .all-time-favs::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: inherit;
+  filter: blur(3px) brightness(0.8);
+  transform: scale(1.1);
+}
+
+.all-time-favs span,
+.overlay-content .all-time-favs span {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  font-size: 1rem;
+  text-shadow: 0 0 5px rgba(0,0,0,0.6);
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.all-time-favs img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+  display: block;
+}
+/* Dock-style hover: scale images */
+.all-time-favs img:hover {
+  transform: scale(1.075);
+  z-index: 10;
+}
+

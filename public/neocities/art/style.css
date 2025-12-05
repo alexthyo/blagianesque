@@ -1,0 +1,16 @@
+/* --- ART PAGE --- */
+.art-inspo,
+.my-art {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;;
+  align-items: center;
+  position: relative;;
+}
+
+.art-inspo img,
+.my-art img {
+  width: auto;
+  height: 160px;
+}
+/* --- END --- */

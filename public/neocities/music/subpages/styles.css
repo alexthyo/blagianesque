@@ -1,0 +1,40 @@
+/* Simple upward scrolling animation for the song list */
+
+.container {
+  height: 1500px;           /* visible area */
+  overflow: hidden;        /* hide text that moves outside */
+  position: relative;      /* anchor for inner absolute element */
+  color: #25ff14;
+  margin-left: 900px;
+  top: 0;
+}
+
+/* Inner content that moves */
+.scroll {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  animation: scrollUp 15s linear infinite;
+}
+
+/* The animation */
+@keyframes scrollUp {
+  0%   { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
+}
+
+/* Optional styling for text */
+.scroll p {
+  font-size: 1.2rem;
+  margin: 0;
+  line-height: 1.4;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

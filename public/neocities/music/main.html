@@ -4,52 +4,598 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music</title>
-  <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../music/style.css" rel="stylesheet" type="text/css" media="all">
+
   </head>
 
   <body>
-    <header>
-      <h1> Music </h1>
+
+    <header class="page-header">
+      <h1>blagianesque.</h1>
+      <nav class="topnav">
+        <a href="../../index.html">Home</a>
+        <a href="../film/main.html">Film</a>
+        <a class="active" href="#music">Music</a>
+        <a href="../photography/main.html">Photography</a>
+        <a href="../books/main.html">Books</a>
+        <a href="../art/main.html">Art</a>
+      </nav>
     </header>
 
-    <main>
-      <section>
-        <h2> My Favorite Artists/Bands </h2>
-          <ol>Carla's Dreams</ol>
-          <ol>Irina Rimes</ol>
-          <ol>INNA</ol>
-          <ol>SATOSHI</ol>
-          <ol>Tosh</ol>
-          <ol>Sena Sener</ol>
-          <ol>Duman</ol>
-          <ol>Deftones</ol>
-          <ol>Sonder</ol>
-          <ol>Return to Dust</ol>
-          planned: placed horizontally with a clickable picture and the name small underneath, when clicked on the icon the artist's "world" open ups
-      </section>
 
-      <section>
-        <h2> My favorite songs of all time </h2>
-            <ol>
-              <a href="https://www.youtube.com/watch?v=flzG7QB0Q18&amp;list=RDflzG7QB0Q18&amp;start_radio=1&amp;pp=ygUOc29uZGVyIHRvbyBmYXOgBwE%3D">Too Fast – Sonder </a>
-            </ol>
-            <ol>
-              <a href="https://www.youtube.com/watch?v=dMV31MWIjLE&amp;list=RDdMV31MWIjLE&amp;start_radio=1&amp;pp=ygUIcHlyYW1pZHOgBwE%3D">Pyramids - Frank Ocean </a>
-            </ol>
-            <ol> There's one more that is actually stuck in my head but I cant find it rn and I forgot the title (ironic given its one of my favs)</ol>
-      </section>
+    <div class="music-page">
 
-      <section>
-        <h2>My CDs Collection</h2>
-          <h3>Classical</h3>
-          <h3>R&B</h3>
-          <h3>Hip-hop</h3>
-          <h3>Jazz</h3>
-          <h3>Romainan Gems</h3>
-            <h4>Manele</h4>
-            <h4>Andra</h4>
-      </section>
-    </main>
+      
+      <main>
+        <div class="split-layout">
+          <div class="left-side">
+            <section class="favorites-section">
+              <h2>My All Time Favorites</h2>
+              <div class="favorites-row">
+                <div class="all-time-favs">
+                  <a href="../music/subpages/carlas.html"><img src="../music/photos/artists/carlas.jpg" alt="Carla's Dreams"></a>
+                  <div class="caption"><a href="https://www.carlasdreams.com">Carla's Dreams</a></div>
+                </div>
 
+                <div class="all-time-favs">
+                  <a href="../music/subpages/duman.html"><img src="../music/photos/artists/duman.jpg" alt="Duman"></a>
+                  <div class="caption"><a href="https://www.dumanlive.com">Duman</a></div>
+                </div>
+
+                <div class="all-time-favs">
+                  <a href="../music/subpages/inna.html"><img src="../music/photos/artists/inna.jpg.webp" alt="Inna"></a>
+                  <div class="caption"><a href="https://www.innaofficial.com">INNA</a></div>
+                </div>
+                          
+                <div class="all-time-favs">
+                  <a href="../music/subpages/irinarimes.html"><img src="../music/photos/artists/irina.jpg" alt="Irina Rimes"></a>
+                  <div class="caption"><a href="https://irinarimes.ro">Irina Rimes</a></div>
+                </div>
+
+                <div class="all-time-favs">
+                  <a href="../music/subpages/deftones.html"><img src="../music/photos/artists/deftones.jpeg" alt="Deftones"></a>
+                  <div class="caption"><a href="https://www.deftones.com">Deftones</a></div>
+                </div>            
+              </div>
+            </section>
+
+            <section class="genres-section">
+              <h2>Genres</h2>
+
+              <div class="genres-row">
+
+                <div class="genres" data-genre="rock">
+
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Rock</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/duman.jpg" alt="Duman">
+                      <div class="caption"><a href="https://www.dumanlive.com">Duman</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/returntodust.jpg" alt="Return to Dust">
+                      <div class="caption"><a href="https://www.returntodust.com">Return to Dust</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/sena.jpg.webp" alt="Sena Sener">
+                      <div class="caption"><a href="https://senasener.com">Sena Sener</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/blacksabbath.jpeg" alt="Black Sabbath">
+                      <div class="caption"><a href="https://www.blacksabbath.com/welcome.html">Black Sabbath</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/ledzeppelin.jpeg" alt="Led Zeppelin">
+                      <div class="caption"><a href="https://www.ledzeppelin.com">Led Zeppelin</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/sonfecibisiklet.jpeg" alt="Son Feci Bisiklet">
+                      <div class="caption"><a href="https://sonfeci.com">Son Feci Bisiklet</a></div>
+                    </div>
+
+                  </div>
+                </div>
+                
+                <div class="genres" data-genre="r&b">
+
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Soul/R&B</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="artists">
+                          <img src="../music/photos/artists/jorjasmith.webp" alt="Jorja Smith">
+                          <div class="caption"><a href="https://www.dumanlive.com">Jorja Smith</a></div>
+                        </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/frankocean.webp" alt="Frank Ocean">
+                      <div class="caption"><a href="https://blonded.co">Frank Ocean</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/sonder.jpg" alt="Sonder">
+                      <div class="caption"><a href="https://www.brentfaiyaz.com">Brent Faiyaz</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/ama.webp" alt="Ama">
+                      <div class="caption"><a href="https://www.amalougistics.com">Ama</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/eliza.jpg" alt="ELIZA">
+                      <div class="caption"><a href="https://www.elizalovechild.com">ELIZA</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/amy.jpg" alt="Amy Winehouse">
+                      <div class="caption"><a href="https://www.amywinehouse.com">Amy Winehouse</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/abel.webp" alt="Abel Tesfaye">
+                      <div class="caption"><a href="https://www.instagram.com/theweeknd/?hl=en">Abel Tesfaye</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/lauren.jpg" alt="Lauren Jauregui">
+                      <div class="caption"><a href="https://sonfeci.com">Lauren Jauregui</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/kaytranada.jpeg" alt="Kaytradana">
+                      <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">Kaytranada</a></div>
+                    </div>
+
+                     <div class="artists">
+                          <img src="../music/photos/artists/alexserra.jpeg" alt="Alex Serra">
+                          <div class="caption"><a href="https://www.dumanlive.com">Alex Serra</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/breathe.jpg" alt="Breathe.">
+                      <div class="caption"><a href="https://www.dumanlive.com">breathe.</a></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="genres">
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Rap</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/littlesimz.webp" alt="Little Simz">
+                      <div class="caption"><a href="https://littlesimz.com">Little Simz</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/kendrick.webp" alt="Kendrick Lamar">
+                      <div class="caption"><a href="https://shop.my-gnx.com">Kendrick Lamar</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/satoshi.jpg.webp" alt="SATOSHI">
+                      <div class="caption"><a href="https://satoshicahul.bandcamp.com/album/rush">SATOSHI</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/xxxtentacion.jpeg" alt="XXXTENTACION">
+                      <div class="caption"><a href="https://xxxtentacion.com/?srsltid=AfmBOooczksG6n0t7Y49WiT97ieJA0O2hsgV1ifw6D0DMo96leNBdKBL">XXXTENTACION</a></div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="genres">
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Raggae</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+                    <div class="artists">
+                      <img src="../music/photos/artists/uddi.jpg" alt="Uddi">
+                      <div class="caption"><a href="https://www.dumanlive.com">Uddi</a></div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="genres">
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Pop</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/michaeljackson.jpg" alt="Michael Jackson">
+                      <div class="caption"><a href="https://www.michaeljackson.com">Michael Jackson</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/carlas.jpg" alt="Carla's Dreams">
+                      <div class="caption"><a href="https://www.carlasdreams.com">Carla's Dreams</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/billieeilish.jpg" alt="Billie Eilish">
+                      <div class="caption"><a href="https://store.billieeilish.com/pages/tour?srsltid=AfmBOooGYHWAm3oDuqzi3aJQbN9sPZhq5lghYRfdlCt2O8-1rYeYSFjg">Billie Eilish</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/finneas.jpg" alt="Finneas">
+                      <div class="caption"><a href="https://shop.finneasofficial.com">Finneas</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/themotans.jpeg" alt="The Motans">
+                      <div class="caption"><a href="https://themotans.com">The Motans</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/tosh.jpeg" alt="Tosh">
+                      <div class="caption"><a href="https://www.instagram.com/tosh_not_macintosh/?hl=en">Tosh</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/evrecangündüz.jpeg" alt="Evrecan Gündüz">
+                      <div class="caption"><a href="https://www.evrencangunduz.com">Evrecan Gündüz</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/delia.jpg" alt="Delia">
+                      <div class="caption"><a href="https://deliaofficial.ro">Delia</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/alexvelea.jpeg" alt="Alex Velea">
+                      <div class="caption"><a href="https://www.instagram.com/iamvelea/">Alex Velea</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/charlotte.jpg" alt="Charlotte Cardin">
+                      <div class="caption"><a href="https://www.charlottecardin.com/en">Charlotte Cardin</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/andra.jpg" alt="Andra">
+                      <div class="caption"><a href="https://andra.ro">Andra</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/markstam.webp" alt="Mark Stam">
+                      <div class="caption"><a href="https://www.instagram.com/markstam_official/?hl=en">Mark Stam</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/smiley.webp" alt="Smiley">
+                      <div class="caption"><a href="https://www.dumanlive.com">Smiley</a></div>
+                    </div>
+                  
+                  </div>
+                </div>
+
+                <div class="genres">
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Classical</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/eriksatie.jpg" alt="Erik Satie">
+                      <div class="caption"><a href="https://en.wikipedia.org/wiki/Erik_Satie">Erik Satie</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/ciprian.jpg" alt="Ciprian Porumbescu">
+                      <div class="caption"><a href="https://ro.wikipedia.org/wiki/Ciprian_Porumbescu">Ciprian Porumbescu</a></div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="genres">
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Jazz</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/sade.png" alt="Sade">
+                      <div class="caption"><a href="https://www.sade.com">Sade</a></div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="genres">
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Folk</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/sandu.jpg" alt="Sandu Ciorba">
+                      <div class="caption"><a href="https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.youtube.com/watch%3Fv%3DZ0DO0XyS8Ko&ved=2ahUKEwissrTJ39GQAxV-_rsIHTyUKwoQ78AJegQIGBAB&usg=AOvVaw0XfQfqYy5k80Cme0NP3kkl">Sandu Ciorba</a></div>
+                    </div>
+                  
+                  </div>
+                </div>
+
+                <div class="genres">
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Indie</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/glassbeams.jpg" alt="Glass Beams">
+                      <div class="caption"><a href="https://glassbeams.com">Glass Beams</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/themarias.jpeg" alt="The Marías">
+                      <div class="caption"><a href="https://www.dumanlive.com">The Marías</a></div>
+                    </div>
+              
+                  </div>
+                </div>
+
+                <div class="genres" data-genre="dance">
+                  <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                    <span>Dance</span>
+                  </div>
+
+                  <div class="genre-artists hidden">
+
+                    <div class="genres">
+                      <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                        <span>Techno</span>
+                      </div>
+
+                      <div class="genre-artists hidden">
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/hozho.jpg" alt="Hozho">
+                          <div class="caption"><a href="https://www.dumanlive.com">Hozho</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/boris.webp" alt="Boris Brejcha">
+                          <div class="caption"><a href="https://www.dumanlive.com">Boris Brejcha</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/izzamusic.jpeg" alt="Izzamuzic">
+                          <div class="caption"><a href="https://www.dumanlive.com">Izzamuzic</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/akcent.jpg" alt="Akcent">
+                          <div class="caption"><a href="https://www.dumanlive.com">Akcent</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/mahmutorhan.jpeg" alt="Mahmut Orhan">
+                          <div class="caption"><a href="https://www.dumanlive.com">Mahmut Orhan</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/flyproject.jpeg" alt="Fly Project">
+                          <div class="caption"><a href="https://www.dumanlive.com">Fly Project</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/kadebostany.avif" alt="Kadebostany">
+                          <div class="caption"><a href="https://www.dumanlive.com">Kadebostany</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/gorillaz.jpg" alt="Gorillaz">
+                          <div class="caption"><a href="https://www.dumanlive.com">Gorillaz</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/glassanimals.webp" alt="Glass Animals">
+                          <div class="caption"><a href="https://www.dumanlive.com">Glass Animals</a></div>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="genres">
+                      <div class="genre-icon" style="background-image: url('../assets/background.jpg');">
+                        <span>Popcorn</span>
+                      </div>
+
+                      <div class="genre-artists hidden">
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/inna.jpg.webp" alt="INNA">
+                          <div class="caption"><a href="https://www.innaofficial.com">INNA</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/antonia.jpg" alt="Antonia">
+                          <div class="caption"><a href="https://www.instagram.com/antonia/?hl=en">Antonia</a></div>
+                        </div>
+
+                        <div class="artists">
+                          <img src="../music/photos/artists/tomboxer.jpg" alt="Tom Boxer">
+                          <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">Tom Boxer</a></div>
+                        </div>
+                      
+                      </div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/morandi.jpg" alt="Morandi">
+                      <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">Morandi</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/zhu.jpg" alt="ZHU">
+                      <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">ZHU</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/rüfüs.webp" alt="RÜFÜS DU SOL">
+                      <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">RÜFÜS DU SOL</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/banica.jpeg" alt="Andreea Bănică">
+                      <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">Andreea Banica</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/4ЯR.jpg" alt="4ЯR">
+                      <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">4ЯR</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/stan.jpg" alt="Alexandra Stan">
+                      <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">Alexandra Stan</a></div>
+                    </div>
+
+                    <div class="artists">
+                      <img src="../music/photos/artists/ash.jpg" alt="Ash">
+                      <div class="caption"><a href="https://www.instagram.com/morandi.music/?hl=en">Ash</a></div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+            </section>
+          </div>
+
+          <div class="right-side">
+
+            <section class="songs-section">
+              <div class="songs-row">
+
+                <div class="song-item">
+                  <a href="https://www.youtube.com/watch?v=flzG7QB0Q18&amp;list=RDflzG7QB0Q18&amp;start_radio=1&amp;pp=ygUOc29uZGVyIHRvbyBmYXOgBwE%3D">Too Fast – Sonder </a>
+                </div>
+
+                <div class="song-item">
+                  <ol>
+                    <a href="https://www.youtube.com/watch?v=dMV31MWIjLE&amp;list=RDdMV31MWIjLE&amp;start_radio=1&amp;pp=ygUIcHlyYW1pZHOgBwE%3D">Pyramids - Frank Ocean </a>
+                  </ol>
+                </div>
+
+                <div class="song-item">
+                  <ol>
+                    <a href="https://www.youtube.com/watch?v=8qnLOthDOQw&list=RD8qnLOthDOQw&start_radio=1&pp=ygUIc2luIGRlbW-gBwE%3D">SIN (DEMO) - Labirinth</a>
+                  </ol>
+                </div>
+
+              </div>
+            </section>
+
+
+            <section class="playlist-section">
+              <h2 class="playlists-title">My Top Playlists</h2>
+              <div class="playlist-row">
+
+                <div class="playlist-item">
+                  <iframe data-testid="embed-iframe" 
+                  style="border-radius:12px" 
+                  src="https://open.spotify.com/embed/playlist/43Mmqf02qjL5lxXQkUKLnI?utm_source=generator&theme=0" 
+                  width="90%" height="352" frameBorder="0" 
+                  allowfullscreen="" 
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                  loading="lazy"></iframe>
+                </div>
+
+              </div>
+            </section> 
+
+          </div>
+        </div>  
+
+        <section class="cds-section">
+          <h2>My Physical Collections</h2>
+          <h3>CDs</h3>
+          <div class="cds-row">
+
+            <div class="photo-cds">
+              <img src="../../neocities/music/photos/cds/thegirlsfromipanema.jpeg" alt="The Girls from Ipanema">
+              <div class="caption">The Girls from Ipanema</div>
+            </div>
+
+            <div class="photo-cds">
+              <img src="../../neocities/music/photos/cds/deftonesdeftones.jpeg" alt="Deftones">
+              <div class="caption">Deftones</div>
+            </div>
+
+            <div class="photo-cds">
+              <img src="../../neocities/music/photos/cds/ohms.jpeg" alt="Ohms">
+              <div class="caption">Ohms</div>
+            </div>
+
+            <div class="photo-cds">
+              <img src="../../neocities/music/photos/cds/whitepony.jpeg" alt="White Pony">
+              <div class="caption">White Pony</div>
+            </div>
+
+          </div>
+        </section>
+
+        <section class="vinyl-section">
+          <h3>Vinyls</h3>
+          <div class="vinyls-row">
+
+            <div class="photo-vinyls">
+              <img src="../../neocities/music/photos/vinyl/equilibrium.webp" alt="Equilibrium">
+              <div class="caption">Equilibrium</div>
+            </div>
+
+            <div class="photo-vinyls">
+              <img src="../../neocities/music/photos/vinyl/little simz.jpeg" alt="Sometimes I Might Be Introvert">
+              <div class="caption">Sometimes I Might Be Introvert</div>
+            </div>
+
+            <div class="photo-vinyls">
+              <img src="../../neocities/music/photos/vinyl/mahal.jpeg" alt="Mahal">
+              <div class="caption">Mahal</div>
+            </div>
+
+          </div>
+        </section>
+      
+      </main>
+
+    </div>  
+    <footer class="page-footer">
+        <p>© 2025 blagianesque. All rights reserved.</p>
+    </footer>
+
+
+    <script src="../music/music.js"></script>
+
+    <div id="genre-overlay" class="hidden">
+      <div class="overlay-content"></div>
+    </div>
   </body>
 </html>
