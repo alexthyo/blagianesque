@@ -204,9 +204,9 @@ h2{
 
 /* Back Button Styles */
 .overlay-content button {
-  background: rgba(255, 255, 255, 0.065);
-  color: #25ff14;
-  border: 1px solid #25ff14;
+  background: rgba(255, 255, 255, 0.065) !important;
+  color: #25ff14 !important;
+  border: 1px solid #25ff14 !important;
   border-radius: 8px;
   padding: 10px 20px;
   font-size: 14px;
@@ -215,17 +215,19 @@ h2{
   transition: all 0.2s ease;
   margin-bottom: 20px;
   align-self: center;
+  appearance: none;
+  -webkit-appearance: none;
 }
 
 .overlay-content button:hover {
-  background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.2) !important;
+  border-color: rgba(255, 255, 255, 0.4) !important;
   transform: translateY(-1px);
 }
 
 .overlay-content button:active {
   transform: translateY(0);
-  background: rgba(255, 255, 255, 0.15);
+  background: rgba(255, 255, 255, 0.15) !important;
 }
 
 .genre-icon, 
