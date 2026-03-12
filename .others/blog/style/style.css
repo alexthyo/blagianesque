@@ -1,0 +1,182 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: black;
+  background-image: url('../../neocities/assets/background.jpg');
+	background-position: top;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", serif;
+  margin: 0;
+}
+
+p {
+  line-height: 1.6em; /*I find the default HTML line-height tends to be a bit claustrophobic for main text*/
+}
+
+hr {
+  border: solid #c7b591;
+  border-width: 2px 0 0 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.right {
+  float: right;
+  margin-left: 1em;
+}
+.left {
+  float: left;
+  margin-right: 1em;
+}
+.center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+@media only screen and (min-width: 600px) {
+  .small {
+    max-width: 60%;
+    height: auto;
+  }
+}
+.caption {
+  margin-top: 0;
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+a:hover {
+  background-color: #414141;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: Tahoma, Geneva, sans-serif;
+  color: black;
+}
+
+/*#CONTAINER is the rectangle that contains everything but the background!*/
+#container {
+  margin: 3em auto;
+  width: 90%;
+	max-width: 700px;
+	background-color: #414141;
+  color: white;
+  outline-color: black;
+  outline-style: ridge;
+  outline-width: 4px;
+  outline-offset: 0;
+}
+
+#content {
+  padding: 10px 5% 20px 5%;
+}
+
+
+/*HEADER STYLE*/
+#header {
+  background-color: black;
+  padding: 0 5%;
+  border-color: black;
+  border-style: ridge;
+  border-width: 0 0 4px 0;
+}
+#header ul {
+  list-style-type: none;
+  padding: 0.5em 0;
+  margin: 0;
+}
+#header li {
+  font-size: 1.2em;
+  display: inline-block;
+  margin-right: 1.5em;
+  margin-bottom: 0.2em;
+  margin-top: 0.2em;
+}
+#header li a {
+  color: white;
+  text-decoration: none;
+  background-color: inherit;
+}
+#header li a:hover {
+  text-decoration: underline;
+}
+
+/*POST LIST STYLE*/
+#postlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+#recentpostlistdiv ul {
+  font-size: 1.2em;
+  padding: 0;
+  list-style-type: none;
+}
+.moreposts {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+}
+
+/*NEXT AND PREVIOUS LINKS STYLE*/
+#nextprev {
+  text-align: center;
+  margin-top: 1.4em;
+}
+
+/*DISQUS STYLE*/
+#disqus_thread {
+  margin-top: 1.6em;
+}
+
+/*FOOTER STYLE*/
+#footer {
+  font-size: 0.8em;
+  padding: 0 5% 10px 5%;
+}
+
+
+/* NAVBAR*/
+.navbar {
+  background: #000;          /* black bar like before */
+  color: #fff;
+  text-align: center;
+  padding: 0.5em 0;
+  position: fixed;        /* keep it at the top of page, scrolls with content */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+}
+body {
+  padding-top: 3em; /* prevents overlap with fixed bar */
+}
+
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 2em;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}

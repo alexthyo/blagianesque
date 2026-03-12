@@ -1,0 +1,48 @@
+/* --- ART PAGE --- */
+.gallery {
+  display: flex;
+  flex-direction: row; /* Horizontal layout for pairs */
+  flex-wrap: wrap; /* Wrap to next row if needed */
+  gap: 20px; /* Space between pairs */
+  justify-content: center; /* Center the row */
+}
+
+.books {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+}
+
+.books img {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+
+/* ...existing code... */
+.goodreads-section {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.goodreads-section {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.goodreads-section h4 span {
+  border: 2px #25ff14 solid;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 20px;
+  
+}
+/* ...existing code... */
+/* --- END --- */

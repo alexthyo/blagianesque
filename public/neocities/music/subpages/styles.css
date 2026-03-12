@@ -38,3 +38,15 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* from tutorial horizontal scroll*/
+.outer {
+  border: 10px solid red;
+  height: 100svh;
+}
+
+.inner {
+  max-height: 100%;
+  overflow-x: auto;
+}

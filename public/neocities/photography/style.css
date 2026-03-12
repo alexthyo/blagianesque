@@ -1,0 +1,23 @@
+
+
+/* ...existing code... */
+.goodreads-section {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.goodreads-section {
+  text-align: center;
+  margin-top: 280px;
+}
+
+.goodreads-section h4 span {
+  border: 2px #25ff14 solid;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 20px;
+  
+}
+/* ...existing code... */
+/* --- END --- */
