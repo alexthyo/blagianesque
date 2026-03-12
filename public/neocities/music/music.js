@@ -48,7 +48,17 @@ document.addEventListener("DOMContentLoaded", () => {
             const backButton = document.createElement("button");
             backButton.textContent = "Go Back";
             backButton.onclick = closeOverlay;
+            backButton.style.backgroundColor = "rgba(255, 255, 255, 0.065)";
+            backButton.style.color = "#25ff14";
+            backButton.style.border = "1px solid #25ff14";
+            backButton.style.borderRadius = "8px";
+            backButton.style.padding = "10px 20px";
+            backButton.style.fontSize = "14px";
+            backButton.style.fontWeight = "500";
+            backButton.style.cursor = "pointer";
+            backButton.style.transition = "all 0.2s ease";
             backButton.style.marginBottom = "20px";
+            backButton.style.alignSelf = "center";
             overlayContent.appendChild(backButton);
           }
           
