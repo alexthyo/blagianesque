@@ -20,3 +20,29 @@
   padding: 20px;
 }
 
+.followme-section {
+  width: 600px;
+  margin: 0 auto;
+}
+
+.followme-section {
+  text-align: center;
+  margin-top: 65px;
+}
+
+.followme-section h4 span {
+  border: 2px #25ff14 solid;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 20px;
+  
+}
+
+.addspace {
+  font-size: 15px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px;
+  
+}
