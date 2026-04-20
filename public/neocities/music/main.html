@@ -7,6 +7,7 @@
     <title>Music</title>
     <link href="../../style.css" rel="stylesheet" type="text/css" media="all">
     <link href="./style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   </head>
 
@@ -29,13 +30,15 @@
       <main>
         <div class="split-layout">
 
-          <!-- LEFT SIDE OF THE PAGE -->
-          <div class="left-side">
 
-            <!-- FAVORITES -->
+          <!-- TOPS SIDE OF THE PAGE-->
+
+            <!-- FAVORITE ARTISTS -->
             <section class="favorites-section">
-              <h2>MY TOP 5's</h2>
+              <h2>MY TOP 5:</h2>
+              <h2>Artists</h2>
               <div class="favorites-row">
+                
                 <div class="all-time-favs">
                   <a href="../music/subpages/carlas.html"><img src="../music/photos/artists/carlas.jpg" alt="Carla's Dreams"></a>
                   <div class="caption"><a href="https://www.carlasdreams.com">Carla's Dreams</a></div>
@@ -62,8 +65,45 @@
                 </div>            
               </div>
             </section>
-            <!-- /FAVORITES -->
+            <!-- /FAVORITE ARTSIST -->
 
+            <!-- FAVORITE SONGS -->
+            <section class="songs-section">
+              <h2>Songs</h2>
+              <div class="songs-row">
+
+                <div class="song-item">
+                  <a href="https://www.youtube.com/watch?v=flzG7QB0Q18&amp;list=RDflzG7QB0Q18&amp;start_radio=1&amp;pp=ygUOc29uZGVyIHRvbyBmYXOgBwE%3D">Too Fast – Sonder </a>
+                </div>
+
+                <div class="song-item">
+                  <ol>
+                    <a href="https://www.youtube.com/watch?v=dMV31MWIjLE&amp;list=RDdMV31MWIjLE&amp;start_radio=1&amp;pp=ygUIcHlyYW1pZHOgBwE%3D">Pyramids - Frank Ocean </a>
+                  </ol>
+                </div>
+
+                <div class="song-item">
+                  <ol>
+                    <a href="https://www.youtube.com/watch?v=8qnLOthDOQw&list=RD8qnLOthDOQw&start_radio=1&pp=ygUIc2luIGRlbW-gBwE%3D">SIN (DEMO) - Labirinth</a>
+                  </ol>
+                </div>
+
+                <div class="song-item">
+                  <ol>
+                    <a href="https://youtu.be/wsAW1RL1VLs?list=PLlNLtKnRmnAzBLQYDoCtkh8y2dpl88gG2">Mind if I Stay</a>
+                </div>
+              
+
+              </div>
+            </section>
+            <!-- /FAVORITE SONGS -->
+
+
+          <!-- /TOPS SIDE OF THE PAGE-->
+
+
+          <!-- LEFT SIDE OF THE PAGE -->
+          <div class="left-side">
             <!-- GENRES -->
             <section class="genres-section">
               <h2>Genres</h2>
@@ -557,41 +597,12 @@
                 <!-- /ELECTRONIC -->
             </section>
             <!-- /GENRES -->
-
           </div>
           <!-- /LEFT SIDE OF THE PAGE -->
 
 
           <!-- RIGHT SIDE OF THE PAGE -->
           <div class="right-side">
-
-            <!-- FAVORITE SONGS -->
-            <section class="songs-section">
-              <div class="songs-row">
-
-                <div class="song-item">
-                  <a href="https://www.youtube.com/watch?v=flzG7QB0Q18&amp;list=RDflzG7QB0Q18&amp;start_radio=1&amp;pp=ygUOc29uZGVyIHRvbyBmYXOgBwE%3D">Too Fast – Sonder </a>
-                </div>
-
-                <div class="song-item">
-                  <ol>
-                    <a href="https://www.youtube.com/watch?v=dMV31MWIjLE&amp;list=RDdMV31MWIjLE&amp;start_radio=1&amp;pp=ygUIcHlyYW1pZHOgBwE%3D">Pyramids - Frank Ocean </a>
-                  </ol>
-                </div>
-
-                <div class="song-item">
-                  <ol>
-                    <a href="https://www.youtube.com/watch?v=8qnLOthDOQw&list=RD8qnLOthDOQw&start_radio=1&pp=ygUIc2luIGRlbW-gBwE%3D">SIN (DEMO) - Labirinth</a>
-                  </ol>
-                </div>
-
-              </div>
-            </section>
-            <!-- /FAVORITE SONGS -->
-
-            <!-- LINK TO LIKED PLAYLIST-->
-             Here is a link to my <a href="../music/subpages/liked.html">Liked Playlist</a>
-            <!-- /LINK TO LIKED PLAYLIST-->
 
             <!-- CONCERTS -->
             <h2>My Concerts</h2> 
@@ -648,6 +659,19 @@
             </section>
             <!-- /CONCERTS-->
 
+            <!-- LINK TO LIKED PLAYLIST-->
+            
+
+            <title>Network</title>
+            <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
+            <script src="{% static 'network/functions.js' %}"></script>
+            <div class="h_container">
+              <h3 class="liked"><a href="../music/subpages/liked.html">Liked Playlist</a></h3> <i id="heart" class="fas fa-heart"></i>
+            </div>
+
+            
+            <!-- /LINK TO LIKED PLAYLIST-->
+
           </div>
         </div>  
 
@@ -657,9 +681,11 @@
           <div class="cds-row">
 
             <div class="photo-cds">
-              <img src="../../neocities/music/photos/cds/thegirlsfromipanema.jpeg" alt="The Girls from Ipanema">
+              <img src="../../neocities/music/photos/cds/thegirlsfromipanema.jpeg" alt="The Girls from Ipanema" onclick="window.open('anotherpage.html', '_blank');">
               <div class="caption">The Girls from Ipanema</div>
             </div>
+
+
 
             <div class="photo-cds">
               <img src="../../neocities/music/photos/cds/diamoneyes.jpg" alt="Diamon Eyes">

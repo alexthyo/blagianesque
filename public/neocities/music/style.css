@@ -14,22 +14,40 @@ main {
 }
 
 .split-layout {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-auto-rows: auto;
+  gap: 20px;
   width: 100%;
-  align-items: flex-start;
+}
+
+/* FINE TUNING POSITIONING*/
+.songs-section{
+    margin-top: -220px;
+    margin-bottom: 3px;
+    margin-left: 3px;
+}
+
+.favorites-section {
+  grid-column: 1 / -1;
+}
+
+.songs-section {
+  grid-column: 2;
 }
 
 .left-side {
-  flex: 2;
+  flex: 2 1 calc(66.67% - 13px);
   display: flex;
   flex-direction: column;
-
+  grid-column: 1;
 }
 
 .right-side {
-  flex: 1;
+  flex: 1 1 calc(33.33% - 7px);
   display: flex;
   flex-direction: column;
+  grid-column: 2;
 }
 
 .playlist-section iframe {
@@ -41,8 +59,15 @@ main {
 }
 
 
-h2{
+h2, h3{
     margin-left: 20px;
+}
+
+h3.liked {
+    margin-top: 28px;
+    margin-left: 0px;
+    text-align: left;
+    /* other styles */
 }
 
 /* --- GENRES --- */
@@ -50,8 +75,8 @@ h2{
 .genre-icon,
 .overlay-content .genre-icon {
   position: relative;
-  width: 120px;
-  height: 120px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   overflow: hidden;
   cursor: pointer;
@@ -60,6 +85,7 @@ h2{
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  transform: scale(0.8);
 }
 
 .genre-icon::before,
@@ -72,7 +98,7 @@ h2{
   background-repeat: no-repeat;
   background-image: inherit;
   filter: blur(1px) brightness(0.8);
-  transform: scale(1.07);
+  transform: scale(0.2);
   z-index: 0;
 }
 
@@ -105,10 +131,12 @@ h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 135px; 
+  width: 135px;
   height: 150px;
   box-sizing: border-box;
+  margin: -10px;     /* ← Adjust this to control spacing */
 }
+
 
 .genre-icon img,
 .artists img {
@@ -249,13 +277,13 @@ h2{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   padding: 20px;
 }
 
 .genres-section {
   flex: 1;
-  max-width: 80%;
+  width: 100%;
 }
 
 .genres-row {
@@ -263,8 +291,8 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-start;
-    gap: 20px;
-    width: 100%;
+    gap: 0px;
+    width: 80%;
     box-sizing: border-box;
 }
 
@@ -346,8 +374,7 @@ h2{
   gap: 5px;
 }
 
-/* All time favs */
-.favorites-row, .genres-row {
+.favorites-row {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -361,6 +388,7 @@ h2{
   margin-right: auto;/* space between sections */
 }
 
+/* All time favs */
 .all-time-favs {
   display: flex;
   flex-direction: column;
@@ -389,14 +417,10 @@ h2{
 }
 /* End */
 
-.songs-section{
-    margin-top: 100px;
-    margin-bottom: 15px;
-    margin-left: 20px;
-}
 
-/* TEST*/
 
+
+/* TEST?? */ 
 .overlay-content .all-time-favs {
   width: 100px;
   height: 100px;
@@ -451,3 +475,22 @@ h2{
   z-index: 10;
 }
 
+/* HEART BUTTON*/
+.h_container{
+    margin-top: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 1px rgba(0,0,0,.1);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#heart{
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+#heart:hover{
+    color: #25ff14;
+}
+/* /HEART BUTTON*/
