@@ -13,6 +13,16 @@ main {
     box-sizing: border-box;
 }
 
+.songs-section {
+  grid-column: 2;
+  grid-row: 1;  /* align with the top of the grid */
+}
+
+.left-side {
+  grid-column: 1;
+  grid-row: 1;
+}
+
 .split-layout {
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -21,28 +31,17 @@ main {
   width: 100%;
 }
 
-/* FINE TUNING POSITIONING*/
-.songs-section{
-    margin-top: -265px;
-    margin-bottom: 20px;
-    margin-left: 1055px;
-}
 
 .favorites-section {
   grid-column: 1 / -1;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .songs-section {
-  grid-column: 2;
+  /* nichts besonderes nötig, fließt normal in right-side */
+  width: 100%;
 }
 
-.left-side {
-  flex: 2 1 calc(66.67% - 13px);
-  display: flex;
-  flex-direction: column;
-  grid-column: 1;
-}
 
 .right-side {
   flex: 1 1 calc(33.33% - 7px);
