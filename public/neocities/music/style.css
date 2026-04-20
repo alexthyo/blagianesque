@@ -23,13 +23,14 @@ main {
 
 /* FINE TUNING POSITIONING*/
 .songs-section{
-    margin-top: -220px;
-    margin-bottom: 3px;
-    margin-left: 3px;
+    margin-top: -265px;
+    margin-bottom: 20px;
+    margin-left: 1055px;
 }
 
 .favorites-section {
   grid-column: 1 / -1;
+  margin-bottom: 60px;
 }
 
 .songs-section {
@@ -55,7 +56,7 @@ main {
 }
 
 .playlists-title {
-    margin-top: 65px;
+    margin-top: 10px;
 }
 
 
@@ -64,7 +65,7 @@ h2, h3{
 }
 
 h3.liked {
-    margin-top: 28px;
+    margin-top: 26px;
     margin-left: 0px;
     text-align: left;
     /* other styles */

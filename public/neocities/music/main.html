@@ -12,7 +12,7 @@
   </head>
 
   <body>
-
+    
     <header class="page-header">
       <h1>blagianesque.</h1>
       <nav class="topnav">
@@ -28,13 +28,10 @@
 
     <div class="music-page">
       <main>
-        <div class="split-layout">
+        <!-- TOPS SIDE OF THE PAGE-->
 
-
-          <!-- TOPS SIDE OF THE PAGE-->
-
-            <!-- FAVORITE ARTISTS -->
-            <section class="favorites-section">
+          <!-- FAVORITE ARTISTS -->
+          <section class="favorites-section">
               <h2>MY TOP 5:</h2>
               <h2>Artists</h2>
               <div class="favorites-row">
@@ -64,11 +61,11 @@
                   <div class="caption"><a href="https://www.deftones.com">Deftones</a></div>
                 </div>            
               </div>
-            </section>
-            <!-- /FAVORITE ARTSIST -->
+          </section>
+          <!-- /FAVORITE ARTSIST -->
 
-            <!-- FAVORITE SONGS -->
-            <section class="songs-section">
+          <!-- FAVORITE SONGS -->
+          <section class="songs-section">
               <h2>Songs</h2>
               <div class="songs-row">
 
@@ -95,19 +92,18 @@
               
 
               </div>
-            </section>
-            <!-- /FAVORITE SONGS -->
-
-
-          <!-- /TOPS SIDE OF THE PAGE-->
-
-
+          </section>
+          <!-- /FAVORITE SONGS -->
+             
+        <!-- /TOPS SIDE OF THE PAGE-->
+        
+        <!-- SPLIT LAYOUT-->
+        <div class="split-layout">
           <!-- LEFT SIDE OF THE PAGE -->
           <div class="left-side">
             <!-- GENRES -->
             <section class="genres-section">
               <h2>Genres</h2>
-
               <div class="genres-row">
                 <!-- METAL -->
                 <div class="genres" data-genre="metal">
@@ -184,9 +180,9 @@
                   <div class="genre-artists hidden">
 
                     <div class="artists">
-                          <img src="../music/photos/artists/jorjasmith.webp" alt="Jorja Smith">
-                          <div class="caption"><a href="https://www.jorjasmith.com">Jorja Smith</a></div>
-                        </div>
+                      <img src="../music/photos/artists/jorjasmith.webp" alt="Jorja Smith">
+                      <div class="caption"><a href="https://www.jorjasmith.com">Jorja Smith</a></div>
+                    </div>
 
                     <div class="artists">
                       <img src="../music/photos/artists/frankocean.webp" alt="Frank Ocean">
@@ -659,21 +655,19 @@
             <!-- /CONCERTS-->
 
             <!-- LINK TO LIKED PLAYLIST-->
-            
-
-            <title>Network</title>
             <script src="https://kit.fontawesome.com/3929e16ef5.js" crossorigin="anonymous"></script>
             <script src="{% static 'network/functions.js' %}"></script>
             <div class="h_container">
               <h3 class="liked"><a href="../music/subpages/liked.html">Liked Playlist</a></h3> <i id="heart" class="fas fa-heart"></i>
             </div>
-
-            
             <!-- /LINK TO LIKED PLAYLIST-->
 
           </div>
+          <!-- /RIGHT SIDE OF THE PAGE -->
         </div>  
+        <!-- /SPLIT LAYOUT-->
 
+        <!-- BOTTOM SIDE OF THE PAGE-->
         <section class="cds-section">
           <h2>My Physical Collections</h2>
           <h3>CDs</h3>
@@ -683,8 +677,6 @@
               <img src="../../neocities/music/photos/cds/thegirlsfromipanema.jpeg" alt="The Girls from Ipanema" onclick="window.open('anotherpage.html', '_blank');">
               <div class="caption">The Girls from Ipanema</div>
             </div>
-
-
 
             <div class="photo-cds">
               <img src="../../neocities/music/photos/cds/diamoneyes.jpg" alt="Diamon Eyes">
@@ -715,6 +707,7 @@
 
           </div>
         </section>
+        <!-- /BOTTOM SIDE OF THE PAGE-->
       
       </main>
 
